@@ -1,0 +1,15 @@
+#### Zabbix Sender ####
+
+Hi I'm not a programmer, I just had a need to test Zabbix server and here source of my work.
+
+	ZABBIX Sender application for testing the connection to a Zabbix server. The app is sending the keys and its values in JSON format and waiting for a response. The algorithm is taken from Zabbix web site and the app is as the sender not the agent. Full instruction how to set Zabbix Sender and Server is in the app (Additional Info).
+The app has been tested with local network only. Let me know if any problems with Mobile network.
+
+#### Links: ####
+Google Play:
+https://play.google.com/store/search?q=Zabbix%20Sender&c=apps
+Zabbix web site: 
+www.zabbix.com
+Zabbix documentation:
+https://www.zabbix.com/documentation/1.8/protocols/agent
+https://www.zabbix.org/wiki/Docs/protocols/zabbix_sender/2.0

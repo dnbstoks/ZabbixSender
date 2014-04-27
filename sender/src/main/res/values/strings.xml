@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_appear">Sender</string>
+
+    <!-- Sender Main -->
+
+    <string name="app_name">Zabbix Sender</string>
+    <string name="tvItemKey">Item Key</string>
+    <string name="tvHostName">Hostname</string>
+    <string name="tvSender1Group">Host 1</string>
+    <string name="tvSender2Group">Host 2</string>
+    <string name="tvItemValue">Item Value</string>
+    <string name="etItemValue1">0</string>
+    <string name="etItemValue2">0</string>
+    <string name="ckRandom">incremented</string>
+    <string name="tvSent">Sent Data:</string>
+    <string name="tvReceived">Received Data:</string>
+    <string name="btSendSend">Send Data</string>
+    <string name="btSendStop">Stop Sending</string>
+    <string name="cbConstantSent">Continuously</string>
+    <string name="tvStatus">Status Bar</string>
+
+    <!-- Action Bar -->
+
+    <string name="action_settings">Settings</string>
+    <string name="action_about_app">About App</string>
+    <string name="action_about_sender">Additional Info</string>
+
+    <!-- About Sender -->
+    <string name="title_activity_about_sender">About Sender</string>
+    <string name="tvAboutSender">        \t The app is designed for testing the connection to Zabbix Server.
+        The app is sending the keys and its values in JSON format and waiting for a response.\n\n
+        Format of the message is as the following:\n
+        {"request": "sender data",\n
+        "data": [\n
+                {\t "host": "Host name 1",\n
+                \t "key": "item_key",\n
+                 \t "value": "33",},\n
+                {\t "host": "Host name 2",\n
+                \t "key": "item_key",\n
+                \t "value": "55",\n
+                }]}\n\n
+        \t If "Continuously" is checked then the sending of data is initiated on change of the
+        Value and transferred as soon as TCP socket is ready. TCP socket is ready when it is
+        connected, sent the required data and received feedback from Zabbix server.\n
+        \t For continuous sending "Random" box must be checked. \n\n
+
+        To check at least one Host and Item, please see the following settings for Zabbix server:\n
+        \t 1. Open Tab "Configuration" -> "Hosts" \n
+        \t 2. On right click "Create host" \n
+        \t 3. In the configuration of host make sure "Host name" are as per app. Agent interfaces are not required. \n
+        \t 4. On Item page click "Create Item" \n
+        \t 5. In the configuration of Item make sure Type is Zabbix trapper, Key is as per app, Type of information is Numeric (float) \n
+        \t 6. Now you can create a Graph with the Item(s) \n
+        \t 7. Also you can monitor values at "Monitoring" -> "Latest Data" \n
+        These are required setting, all others, not mentioned values, are not necessary.
+
+    </string>
+
+    <!-- Settings -/- general - server - hosts -->
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="settings_server_ip">Server IP</string>
+    <string name="settings_server_defaultIp">192.168.1.1</string>
+    <string name="settings_server_ipSummary">Enter Zabbix server IP address</string>
+    <string name="settings_server_port">Server Port</string>
+    <string name="settings_server_defaultPort">10051</string>
+    <string name="settings_server_portSummary">Enter Zabbix server port</string>
+
+    <string name="settings_sender_categoryHostnames">Hostnames</string>
+    <string name="settings_sender_hostname1">Hostname 1</string>
+    <string name="settings_sender_hostnameSummary">Enter host name as in Server</string>
+    <string name="settings_sender_defaultHostname1">hostname1</string>
+    <string name="settings_sender_hostname2differ1">Hostname 2 differ from 1</string>
+    <string name="settings_sender_hostname2differ1Summary">Check if hostname 2 is different then hostname 1</string>
+    <string name="settings_sender_hostname2">Hostname 2</string>
+    <string name="settings_sender_defaultHostname2">hostname2</string>
+    <string name="settings_sender_categoryKeys">Items</string>
+    <string name="settings_sender_itemKey1">Key 1</string>
+    <string name="settings_sender_itemKeySummary">Enter Item Key as in Server</string>
+    <string name="settings_sender_defaultItemKey1">itemkey1</string>
+    <string name="settings_sender_itemKey2">Key 2</string>
+    <string name="settings_sender_defaultItemKey2">itemkey2</string>
+
+    <string name="settings_general_generatorPeriod">Generator period</string>
+    <string name="settings_general_defaultGeneratorPeriod">200</string>
+    <string name="settings_general_generatorPeriodSummary">Item value increment period, ms</string>
+    <string name="settings_general_TCPinTimeout">Incoming TCP timeout</string>
+    <string name="settings_general_defaultTCPinTimeout">5000</string>
+    <string name="settings_general_TCPinTimeoutSummary">Timeout for incoming messages</string>
+    <string name="settings_general_TCPoutTimeout">Outgoing TCP timeout</string>
+    <string name="settings_general_defaultTCPoutTimeout">5000</string>
+    <string name="settings_general_TCPoutTimeoutSummary">Timeout for outgoing messages</string>
+
+    <string name="settings_headerGeneral">General Settings</string>
+    <string name="settings_headerGeneralSummary">TCP socket and number generator settings</string>
+    <string name="settings_headerServer">Zabbix Server</string>
+    <string name="settings_headerServerSummary">Server communications settings</string>
+    <string name="settings_headerSender">Zabbix Sender</string>
+    <string name="settings_headerSenderSummary">Application settings</string>
+
+</resources>

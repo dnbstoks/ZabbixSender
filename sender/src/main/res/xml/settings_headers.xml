@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="com.dnbstoks.zabbixsender.sender.Settings$GeneralPreferenceFragment"
+        android:title="@string/settings_headerGeneral"
+        android:summary="@string/settings_headerGeneralSummary"/>
+
+    <header
+        android:fragment="com.dnbstoks.zabbixsender.sender.Settings$ServerPreferenceFragment"
+        android:title="@string/settings_headerServer"
+        android:summary="@string/settings_headerServerSummary"/>
+
+    <header
+        android:fragment="com.dnbstoks.zabbixsender.sender.Settings$SenderPreferenceFragment"
+        android:title="@string/settings_headerSender"
+        android:summary="@string/settings_headerSenderSummary"/>
+
+</preference-headers>

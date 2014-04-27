@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/settings_sender_categoryHostnames">
+
+        <EditTextPreference
+            android:key="settings_hostname1"
+            android:title="@string/settings_sender_hostname1"
+            android:defaultValue="@string/settings_sender_defaultHostname1"
+            android:summary="@string/settings_sender_hostnameSummary"
+            android:selectAllOnFocus="true"
+            android:inputType="text"
+            android:capitalize="words"
+            android:singleLine="true"
+            android:maxLines="1" />
+
+        <CheckBoxPreference
+            android:key="settings_hostname2differ1"
+            android:title="@string/settings_sender_hostname2differ1"
+            android:summary="@string/settings_sender_hostname2differ1Summary"
+            android:defaultValue="false" />
+
+        <EditTextPreference
+            android:dependency="settings_hostname2differ1"
+            android:key="settings_hostname2"
+            android:title="@string/settings_sender_hostname2"
+            android:summary="@string/settings_sender_hostnameSummary"
+            android:defaultValue="@string/settings_sender_defaultHostname2"
+            android:selectAllOnFocus="true"
+            android:inputType="text"
+            android:capitalize="words"
+            android:singleLine="true"
+            android:maxLines="1" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/settings_sender_categoryKeys">
+
+        <EditTextPreference
+            android:key="settings_itemKey1"
+            android:title="@string/settings_sender_itemKey1"
+            android:defaultValue="@string/settings_sender_defaultItemKey1"
+            android:summary="@string/settings_sender_itemKeySummary"
+            android:selectAllOnFocus="true"
+            android:inputType="text"
+            android:capitalize="words"
+            android:singleLine="true"
+            android:maxLines="1" />
+
+
+        <EditTextPreference
+            android:key="settings_itemKey2"
+            android:title="@string/settings_sender_itemKey2"
+            android:defaultValue="@string/settings_sender_defaultItemKey2"
+            android:summary="@string/settings_sender_itemKeySummary"
+            android:selectAllOnFocus="true"
+            android:inputType="text"
+            android:capitalize="words"
+            android:singleLine="true"
+            android:maxLines="1" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

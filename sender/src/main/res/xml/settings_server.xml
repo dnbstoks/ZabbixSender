@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="settings_server_ip"
+        android:title="@string/settings_server_ip"
+        android:defaultValue="@string/settings_server_defaultIp"
+        android:summary="@string/settings_server_ipSummary"
+        android:selectAllOnFocus="false"
+        android:inputType="number|text"
+        android:capitalize="words"
+        android:singleLine="true"
+        android:maxLines="1" />
+
+    <EditTextPreference
+        android:key="settings_server_port"
+        android:title="@string/settings_server_port"
+        android:defaultValue="@string/settings_server_defaultPort"
+        android:summary="@string/settings_server_portSummary"
+        android:selectAllOnFocus="false"
+        android:inputType="number"
+        android:capitalize="words"
+        android:singleLine="true"
+        android:maxLines="1" />
+
+</PreferenceScreen>
